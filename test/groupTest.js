@@ -28,6 +28,6 @@ Step(
   function showAll(err , files) {
     fulfill('three');
     if (err) throw err;
-    assert.deepEqual(dirResults, files);
+    assert.deepEqual(dirResults, files[0]);
   }
 );

@@ -16,7 +16,7 @@ Step(
   function showStuff(err, code, users) {
     fulfill('two');
     if (err) throw err;
-    assert.equal(selfText, code, "Code should come first");
-    assert.equal(etcText, users, "Users should come second");
+    assert.equal(selfText, code[0], "Code should come first");
+    assert.equal(etcText, users[0], "Users should come second");
   }
 );

@@ -39,8 +39,8 @@ Also there is support for parallel actions:
       // Show the result when done
       function showStuff(err, code, users) {
         if (err) throw err;
-        sys.puts(code);
-        sys.puts(users);
+        sys.puts(code[0]);
+        sys.puts(users[0]);
       }
     )
 
@@ -64,7 +64,7 @@ Also you can use group with a dynamic number of common tasks.
       },
       function showAll(err , files) {
         if (err) throw err;
-        sys.p(files);
+        sys.p(files[0]);
       }
     );
 
